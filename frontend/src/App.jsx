@@ -1,10 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import React, { useEffect } from "react";
+import "./App.css";
+import Button from "./common/components/buttons/Button";
+import logo from "./logo.svg";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
+        <Button>TOTOOTOTOTO</Button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -20,6 +28,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
