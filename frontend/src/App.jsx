@@ -1,14 +1,9 @@
-import axios from "axios";
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Button from "./common/components/buttons/Button";
 import logo from "./logo.svg";
 
 const App = () => {
-  useEffect(() => {
-    axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
-  }, []);
-
   return (
     <div className="App">
       <header className="App-header">
