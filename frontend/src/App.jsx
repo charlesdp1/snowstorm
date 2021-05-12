@@ -1,26 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Banner from "./common/components/Banner";
 import Button from "./common/components/buttons/Button";
-import logo from "./logo.svg";
+import Test from "./Test";
 
 const App = () => {
+  const [state, setState] = useState(0);
+
+  const handleButtonClick = () => {
+    setState(state + 1);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Button>TOTOOTOTOTO</Button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Test />
+      <Button onClick={handleButtonClick}>
+        {state}
+      </Button>
+      <Banner />
     </div>
   );
 };

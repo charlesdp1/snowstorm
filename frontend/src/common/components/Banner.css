@@ -1,0 +1,45 @@
+.Root {
+  display: flex;
+  border: 1px solid black;
+  width: 600px;
+  padding: 6px;
+  border-radius: '15px';
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+}
+
+.Temperature {
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.Conditions{
+  font-size: 13px;
+  color: #565353;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+}
+
+.Location{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
+}
+
+.City{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Units{
+  width: 10%;
+}
+
+.Image{
+  width: 10%;
+}

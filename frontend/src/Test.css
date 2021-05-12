@@ -1,0 +1,10 @@
+.Div1 {
+  background-color: rgb(28, 39, 202);
+  height: 100px;
+  color: rgb(192, 63, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 100px;
+}
