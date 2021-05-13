@@ -1,18 +1,9 @@
-import axios from 'axios';
 import { format } from 'date-fns';
-import React, { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
+import React from "react";
 import "./Banner.css";
 
-const Banner = () => {
-
-  const [weather, setWeather] = useState();
-
-  useEffect(() => {
-    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Quebec&appid=e8fcae1222b8c37f34884b546ab09e77').then(res=>{
-      setWeather(res.data);
-    })
-  }, [])
-
+const Banner = ({ weather }) => {
   const kelvinToCelsius = (degreeInKelvin) => {
     return (degreeInKelvin - 273.15).toFixed(0);
   };
@@ -46,6 +37,14 @@ const Banner = () => {
       </div>
     </div>
   );
+};
+
+Banner.propTypes = {
+  weather: PropTypes.shape,
+};
+
+Banner.defaultProps = {
+  weather: undefined,
 };
 
 

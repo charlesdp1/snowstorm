@@ -1,7 +1,6 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: rgb(83, 83, 248);
   height: 1400px;
