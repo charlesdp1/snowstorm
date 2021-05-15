@@ -4,7 +4,7 @@ import "./Title.css";
 const Test = () => {
   return (
     <div className="Div1">
-        Météo Caca
+        MétéoRaptor
       </div>
   );
 };
