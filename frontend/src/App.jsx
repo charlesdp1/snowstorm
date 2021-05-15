@@ -8,7 +8,7 @@ import SunWidget from "./common/components/SunWidget";
 import Title from "./common/components/Title";
 import View from "./common/components/View";
 
-let one = "https://api.openweathermap.org/data/2.5/weather?q=Saguenay&appid=e8fcae1222b8c37f34884b546ab09e77"
+let one = "https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=e8fcae1222b8c37f34884b546ab09e77"
 
 const App = () => {
   const [state, setState] = useState(0);
