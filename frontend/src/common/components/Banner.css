@@ -15,7 +15,7 @@
   margin-left: 20px;
 }
 
-.Conditions{
+.Conditions {
   font-size: 13px;
   color: #565353;
   margin-left: 15px;
@@ -25,7 +25,7 @@
   width: 20%;
 }
 
-.Location{
+.Location {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -33,15 +33,15 @@
   width: 50%;
 }
 
-.City{
+.City {
   font-size: 25px;
   font-weight: 600;
 }
 
-.Units{
+.Units {
   width: 10%;
 }
 
-.Image{
+.Image {
   width: 10%;
 }

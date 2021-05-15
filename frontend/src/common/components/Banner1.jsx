@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from "react";
 import "./Banner.css";
 
-
 const Banner = ({ weather }) => {
   const kelvinToCelsius = (degreeInKelvin) => {
     return (degreeInKelvin - 273.15).toFixed(0);

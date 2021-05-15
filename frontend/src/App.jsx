@@ -2,9 +2,13 @@ import axios from 'axios';
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Banner from "./common/components/Banner";
+import Banner1 from "./common/components/Banner1";
 import Button from "./common/components/buttons/Button";
 import SunWidget from "./common/components/SunWidget";
 import Title from "./common/components/Title";
+import View from "./common/components/View";
+
+let one = "https://api.openweathermap.org/data/2.5/weather?q=Saguenay&appid=e8fcae1222b8c37f34884b546ab09e77"
 
 const App = () => {
   const [state, setState] = useState(0);
@@ -15,7 +19,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Quebec&appid=e8fcae1222b8c37f34884b546ab09e77').then(res=>{
+    axios.get(one).then(res=>{
       setWeather(res.data);
     })
   }, [])
@@ -27,7 +31,9 @@ const App = () => {
         {state}
       </Button>
       <Banner weather={weather} />
+      <Banner1 weather={weather} />
       <SunWidget weather={weather} />
+      <View weather={weather} />
     </div>
   );
 };
