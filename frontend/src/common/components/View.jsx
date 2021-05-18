@@ -13,7 +13,7 @@ const View = ({ weather }) => {
 
   return (
     <div className="Back">
-      <img className="Image" src="https://lh3.googleusercontent.com/proxy/OA2vhEKDEU5MAIFJgqVMQIzqTfdqfRHxCrFMhTJAnkzGJrPx8O75leQwowuSTPZBO1z91JdFMReYFtvPFWD57MlvLsJM1i4IanNtWhmHLSf6"/>
+      <img className="Image" src="https://lh3.googleusercontent.com/proxy/1wj_36YUWOD7blXphvtovFS1qIdCB8tofNbNk8FL-eCPlkO-BOgzIkFbptZp9qt_ubTKUDW9Vt23PpgbrOwHoLO0HviMQSGna4a4Vu6epCfjlO-ooPrQb-zxf75If3y4lRAHmqyWPw"/>
       <div className="View">{`Visibility: ${meterToKilometer(weather.visibility)} Km`}</div>
     </div>
   );

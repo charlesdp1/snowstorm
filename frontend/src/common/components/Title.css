@@ -1,10 +1,32 @@
 .Div1 {
-  background-color: rgb(212, 224, 39);
+  background-color: black;
   height: 100px;
-  color: rgb(112, 38, 38);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 95px;
+  font-size: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.Image1 {
+  width: 60px;
+  border-radius: 100%;
+}
+
+.Back1 {
+  background-color: black;
+  height: 100px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Image3 {
+  width: 50px;
+  border-radius: 100%;
 }

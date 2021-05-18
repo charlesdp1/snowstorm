@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Banner from "./common/components/Banner";
 import Banner1 from "./common/components/Banner1";
+import Banner2 from "./common/components/Banner2";
 import Button from "./common/components/buttons/Button";
 import SunWidget from "./common/components/SunWidget";
 import Title from "./common/components/Title";
@@ -27,11 +28,12 @@ const App = () => {
   return (
     <div className="App">
       <Title />
-      <Button onClick={handleButtonClick}>
+     <Button onClick={handleButtonClick}>
         {state}
       </Button>
       <Banner weather={weather} />
       <Banner1 weather={weather} />
+      <Banner2 weather={weather} />
       <SunWidget weather={weather} />
       <View weather={weather} />
     </div>
