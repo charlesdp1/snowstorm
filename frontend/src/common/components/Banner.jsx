@@ -23,7 +23,7 @@ const Banner = ({ weather }) => {
 
   return (
     <div className="Root">
-      <img className="Image" src="https://cdn.drawception.com/images/panels/2012/4-12/DQ8ZgDHG95-10.png"/>
+      <img className="Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Weather-more-clouds.svg/1024px-Weather-more-clouds.svg.png"/>
       <div className="Temperature">{kelvinToCelsius(weather.main.temp)}</div>
       <div className="Units">°C|°F</div>
       <div className="Conditions">

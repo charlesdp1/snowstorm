@@ -14,7 +14,7 @@ const SunWidget = ({ weather }) => {
   return (
     <div className="Background">
       <div className="Clock">
-        <img className="Image2" src="https://pics.freeicons.io/uploads/icons/png/19263793681548329952-512.png"></img>
+        <img className="Image5" src="https://pics.freeicons.io/uploads/icons/png/19263793681548329952-512.png"></img>
         <div > Sunrise </div>
         <div className="Time"> {formatUnixTime(weather.sys.sunrise)} </div>
       </div>
