@@ -1,42 +1,42 @@
-import axios from 'axios';
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Banner from "./common/components/Banner";
-import Banner1 from "./common/components/Banner1";
-import Banner2 from "./common/components/Banner2";
-//import Button from "./common/components/buttons/Button";
-import SunWidget from "./common/components/SunWidget";
 import Title from "./common/components/Title";
-import View from "./common/components/View";
+import Banner from "./common/components/widgets/Banner";
+import SunWidget from "./common/components/widgets/SunWidget";
+import VisibilityWidget from "./common/components/widgets/VisibilityWidget";
 
-let one = "https://api.openweathermap.org/data/2.5/weather?q=Quebec&appid=e8fcae1222b8c37f34884b546ab09e77"
+const urlQuebec =
+  "https://api.openweathermap.org/data/2.5/weather?q=Quebec&appid=e8fcae1222b8c37f34884b546ab09e77";
+const urlMontreal =
+  "https://api.openweathermap.org/data/2.5/weather?q=Montreal&appid=e8fcae1222b8c37f34884b546ab09e77";
+const urlToronto =
+  "https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=e8fcae1222b8c37f34884b546ab09e77";
+const urlLondon =
+  "https://api.openweathermap.org/data/2.5/weather?q=London&appid=e8fcae1222b8c37f34884b546ab09e77";
 
 const App = () => {
-  //const [state, setState] = useState(0);
   const [weather, setWeather] = useState();
 
-//  const handleButtonClick = () => {
-//    setState(state + 1);
-//  };
-
   useEffect(() => {
-    axios.get(one).then(res=>{
+    axios.get(urlQuebec).then((res) => {
       setWeather(res.data);
-    })
-  }, [])
+    });
+  }, []);
+
+  if (!weather) return null;
 
   return (
     <div className="App">
       <Title />
-      <Banner weather={weather} />
-      <Banner1 weather={weather} />
-      <Banner2 weather={weather} />
+      <Banner url={urlQuebec} />
+      <Banner url={urlMontreal} />
+      <Banner url={urlToronto} />
+      <Banner url={urlLondon} />
       <SunWidget weather={weather} />
-      <View weather={weather} />
+      <VisibilityWidget weather={weather} />
     </div>
   );
 };
-
-
 
 export default App;
